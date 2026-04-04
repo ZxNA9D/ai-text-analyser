@@ -1,0 +1,3 @@
+.venv/
+data/sentiment_big.csv
+__pycache__/
