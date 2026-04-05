@@ -112,8 +112,7 @@ streamlit run app.py
 
 ## Authors
 
-Zunaid
-Yashita
+Zunaid & Yashita
 
 ---
 
