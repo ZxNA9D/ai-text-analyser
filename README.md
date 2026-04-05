@@ -79,6 +79,16 @@ https://ai-text-analyser-am3zn6vxshrdqxt8nrm5jx.streamlit.app/
 
 ---
 
+## Screenshots
+
+### Application Interface
+![App UI](assets/screenshot1.png)
+
+### Example Output
+![Result](assets/screenshot2.png)
+
+---
+
 ## Installation and Usage
 
 To run the project locally:
