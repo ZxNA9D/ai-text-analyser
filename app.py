@@ -2,6 +2,9 @@ import streamlit as st
 import pickle
 import re
 
+# Page config
+st.set_page_config(page_title="AI Text Analyzer", layout="centered")
+
 # Load models
 sentiment_model = pickle.load(open("models/sentiment_model.pkl", "rb"))
 sentiment_vectorizer = pickle.load(open("models/vectorizer.pkl", "rb"))
@@ -30,8 +33,6 @@ emotion_map = {
 }
 
 # UI
-st.set_page_config(page_title="AI Text Analyzer", layout="centered")
-
 st.title("🧠 AI Text Analyzer Suite")
 st.write("Analyze text using multiple AI models")
 
@@ -71,3 +72,10 @@ if st.button("Analyze"):
         pred = emotion_model.predict(vec)[0]
 
         st.info(f"Emotion: {emotion_map[pred]}")
+
+# 🔥 WATERMARK (WORKING VERSION)
+st.markdown("---")
+st.markdown(
+    "<div style='text-align: right; opacity: 0.6; font-size: 13px;'>Created by Zunaid & Yashita </div>",
+    unsafe_allow_html=True
+)
